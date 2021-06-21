@@ -1,3 +1,4 @@
+import React from "react";
 import { makeStyles, Card, Typography, Box } from "@material-ui/core";
 import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
@@ -36,7 +37,7 @@ function Joke() {
           { params }
         );
         setJoke(response.data);
-      } catch {
+      } catch (error) {
         setJoke({});
       }
     }

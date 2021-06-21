@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Button, Grid, Box, Typography, makeStyles } from "@material-ui/core";
@@ -67,7 +68,7 @@ function Categories() {
         );
         setCategories(response.data);
         setError(false);
-      } catch {
+      } catch (error) {
         setError(true);
       }
     }
