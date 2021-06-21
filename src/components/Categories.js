@@ -25,6 +25,10 @@ const useStyles = makeStyles({
     fontWeight: 800,
     color: "#fff",
     backgroundColor: "#422ED4",
+    textTransform: "none",
+    minWidth: 170,
+    padding: "15px 0",
+    borderRadius: "20px",
   },
 });
 
